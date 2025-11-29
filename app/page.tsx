@@ -3,6 +3,7 @@ import { Map as MapIcon } from "lucide-react";
 import { auth } from "@/auth";
 import AuthButton from "@/components/auth-button";
 
+export const revalidate = 10;
 export default async function LandingPage() {
   const session = await auth();
   const isLoggedIn = !!session?.user;
